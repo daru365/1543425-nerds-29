@@ -1,6 +1,6 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Дарья Мирошниченко](https://up.htmlacademy.ru/htmlcss/29/user/1543425).
+* Студент: [Дарья Мирошниченко ](https://up.htmlacademy.ru/htmlcss/29/user/1543425).
 * Наставник: [Мария Белогубова](https://htmlacademy.ru/profile/id87018).
 
 ---
