@@ -1,119 +1,123 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия Nёrd's</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
-  <body>
-
-  <header>
   
-  	<nav>
-  		<a>
+  <body class="page-body">
+ 
+  <header class="main-header">
+  
+  	<nav class="main-nav">
+  		<a class="main-header-logo">
   			<img src="img/nerds-logo.svg" width="159.87" height="65"
 alt="Логотип дизайн-студии Nёrd's">
 		</a>
-  	<ul>
+  	<ul class="site-navigation">
   		<li><a href="#">Студия</a></li>
   		<li><a href="#">Клиенты</a></li>
   		<li><a href="catalog.html">Магазин</a></li>
   		<li><a href="#">Контакты</a></li>
   	</ul>
 
-  		<b>Долго, дорого, скурпулезно.</b>
+  		<p class="slogan"><b>Долго, дорого, скурпулезно.</b></p>
 
-  		<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  		<p class="slogan.comment">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 	
-	<p><a href="#">Корзина</a></p>
+	<p><a class="basket-link" href="#">Корзина</a></p>
 	</nav>
 
-  	<a href="#">Узнать больше</a>
+  	<a class="more-link" href="#">Узнать больше</a>
 
   </header>
 
-  <main>
+  <main class="container">
   	
   	<h1>Дизайн-студия Nёrd's</h1>
 	
-	<section>
-    <ul>
-      <li>
+	<section class="options">
+    <ul class="option-link">
+      <li class="option-items">
         <h3>ВЕБ-САЙТЫ</h3>
         Мир никогда не будет прежним после того как увидит ваш сайт!
-        <a href="#">Заказать</a>
+        <a class="button-1" href="#">Заказать</a>
       </li>
-      <li>
+      <li class="option-items">
         <h3>ПРИЛОЖЕНИЯ</h3>
         Покорите топ-10 приложений в AppStore и Google Play.
-        <a href="#">Заказать</a>
-      </li>
-      <li>
+        <a class="button-2" href="#">Заказать</a>
+      </li class="option-items">
+      <li class="option-items">
         <h3>ПРЕЗЕНТАЦИИ</h3>
         Вы даже не подозреваете, насколько вы изумительны!
-        <a href="#">Заказать</a>
+        <a class="button-3" href="#">Заказать</a>
       </li>
     </ul>
   </section>
 
-  <section>
+  <section class="about">
   	<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
   	Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 
   	<h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
-  	<ul>
-  		<li>Веб-сайтов любой сложности</li>
-  		<li>Мобильных приложений для IOS и Android</li>
-  		<li>Слайдшоу и видео для корпоративных презентаций</li>
+  	<ul class="about-list">
+  		<li class="about-items">Веб-сайтов любой сложности</li>
+  		<li class="about-items">Мобильных приложений для IOS и Android</li>
+  		<li class="about-items">Слайдшоу и видео для корпоративных презентаций</li>
   	</ul>
 	
-	<a>
+	<a class="header-picture">
   	 <img src="img/nerds-illustration1.svg" width="630" height="208">
 	</a>
 
 	<p>
 		C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ
 	</p>
-	<ul>
-		<li><h2>146%</h2></li>
+	<ul class="features">
+		<li class="features-list"><h2>146%</h2></li>
 		Уровень самоотдачи
-		<li><h2>100%</h2></li>
+		<li class="features-list"><h2>100%</h2></li>
 		Соблюдение сроков
-		<li><h2>50%</h2></li>
+		<li class="features-list"><h2>50%</h2></li>
 		Минимальная предоплата
 	</ul>
 
 	 <div class="gallery">
-	  <img src="img/Group 5.svg" width="199" height="67.82">
-      <img src="img/logo-2 1.svg" width="209" height="90">
-      <img src="img/logo-3 1.svg" width="185" height="52">
-      <img src="img/logo-4 1.svg" width="173" height="84">
+	  <img src="img/Group5.svg" width="199" height="67.82">
+      <img src="img/logo-2.svg" width="209" height="90">
+      <img src="img/logo-3.svg" width="185" height="52">
+      <img src="img/logo-4.svg" width="173" height="84">
     </div>	
   </section>
 
-  <section>
+  <section class="contacts">
   	<h2>NЁRDS DESIGN STUDIO</h2>
   	<p>191186, Санкт-Петербург,</p>
   	<p>ул. Б. Конюшенная, д. 19/8</p>	
-  	<p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-  	<a href="#">Карта</a>
-  	<button type="button">Обратная связь</button>
+  	<p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+  	<a class="contacts-map" href="#">Карта</a>
+  	<button class="button" type="button">Обратная связь</button>
 
   </section>
   </main>
 
-  <footer>
-  	<section>
+  <footer class="page-footer main-footer">
+  	<section class="footer-social">
   	<h3>Давайте дружить, это выгодно!</h3>
   	<p>Скидка 10% для друзей из соцсетей.</p>
   	<ul>
       <li>
-        <a href="#">Вконтакте</a>
+        <a class="social-button" href="#">Вконтакте</a>
       </li>
       <li>
-        <a href="#">Фейсбук</a>
+        <a class="social-button" href="#">Фейсбук</a>
       </li>
       <li>
-        <a href="#">Инстаграм</a>
+        <a class="social-button" href="#">Инстаграм</a>
       </li>
     </ul>
 	</section>
