@@ -18,7 +18,7 @@ a {
 }
 .main-header {
   background-color: var(--basic-lightgrey);
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 .site-navigation {
@@ -50,3 +50,14 @@ a {
   color: #000000;
 }
 
+.big-numbers {
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+.big-numbers sup {
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: bold;
+}
