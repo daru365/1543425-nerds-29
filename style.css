@@ -9,8 +9,7 @@
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
-
+    font-family: 'Roboto', Arial, sans-serif;
 }
 
 a {
@@ -18,7 +17,7 @@ a {
 }
 .main-header {
   background-color: var(--basic-lightgrey);
-  font-family: 'Roboto', Arial, sans-serif;
+
 }
 
 .site-navigation {
