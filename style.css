@@ -60,3 +60,33 @@ a {
   line-height: 40px;
   font-weight: bold;
 }
+
+.page-headline {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.sorting {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.sorting-options {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.solutions {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.solutions-options {
+  font-size: 16px;
+  line-height: 18px;
+}

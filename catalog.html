@@ -7,34 +7,35 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
-  <body>
+  
+  <body class="page-body">
 
-  <header>
-  	<nav>
+  <header class="main-header">
+  	<nav class="main-nav">
   		<a href="index.html">
   			<img src="img/nerds-logo.svg" width="159.87" height="65"
 alt="Логотип дизайн-студии Nёrd's">
 		</a>
-  	<ul>
+  	<ul class="site-navigation">
   		<li><a href="#">Студия</a></li>
   		<li><a href="#">Клиенты</a></li>
   		<li><a href="#">Магазин</a></li>
   		<li><a href="#">Контакты</a></li>
   	</ul>
 	
-	<p><a href="#">Корзина</a></p>
+	<p><a class="basket-link" href="#">Корзина</a></p>
 	</nav>
-  </header>
-
+  
   <main>
-    <h1>Магазин готовых шаблонов</h1>
+    <h1 class="page-headline">Магазин готовых шаблонов</h1>
 
-  <section>
-    <b>СОРТИРОВАТЬ:</b>
-  <ul>
-    <li>ПО ЦЕНЕ</li>
-    <li>ПО ТИПУ</li>
-    <li>ПО НАЗВАНИЮ</li>
+</header>
+  <section class="sorting">
+    <b>Сортировать:</b>
+  <ul class="sorting-options">
+    <li>по цене</li>
+    <li>по типу</li>
+    <li>по названию</li>
   </ul>
 <!-- Для формы сортировки -->
   </section>
@@ -48,51 +49,51 @@ alt="Логотип дизайн-студии Nёrd's">
     <h2>Список готовых решений</h2>
   <ul>
     <li>
-     <h3>SEDONA</h3>
-     <p>Информационный сайт для туристов</p>
+     <p class="solutions">sedona</p>
+     <p class="solutions-options">Информационный сайт для туристов</p>
       <img src="img/img-sedona1.svg" width="360" height="576" alt="Информационнный сайт SEDONA">
       <p>
-        <button type="button">9 900 ₽</button>
+        <button class="button" type="button">9 900 ₽</button>
       </p>
      </li>
     <li>
-     <h3>PINK APP</h3>
-     <p>Продуктовый лендинг приложения для iOS и Android</p>
+     <p class="solutions">pink app</p>
+     <p class="solutions-options">Продуктовый лендинг приложения для iOS и Android</p>
       <img src="img/img-pink1.svg" width="358" height="576">
         <p>
-        <button type="button">9 900 ₽</button>
+        <button class="button" type="button">9 900 ₽</button>
       </p>
     </li>
     <li>
-      <h3>BARBERSHOP</h3>
-     <p>Сайт салона красоты.Для мужчин, да.</p>
+      <p class="solutions">barbershop</p>
+     <p class="solutions-options">Сайт салона красоты.Для мужчин, да.</p>
       <img src="img/img-barbershop1.svg" width="364" height="582">
        <p>
-        <button type="button">9 900 ₽</button>
+        <button class="button" type="button">9 900 ₽</button>
       </p>
     </li>
     <li>
-      <h3>MISHKA</h3>
-     <p>Интернет-магазин вязаных игрушек</p>
+      <p class="solutions">mishka</p>
+     <p class="solutions-options">Интернет-магазин вязаных игрушек</p>
       <img src="img/img-mishka1.svg" width="362" height="580">
        <p>
-        <button type="button">9 900 ₽</button>
+        <button class="button" type="button">9 900 ₽</button>
       </p>
     </li>
     <li>
-      <h3>A PLUS</h3>
-     <p>Лендинг курсов повышения квалификации</p>
+      <p class="solutions">a plus</p>
+     <p class="solutions-options">Лендинг курсов повышения квалификации</p>
       <img src="img/img-aplus1.svg" width="364" height="582">
        <p>
-        <button type="button">9 900 ₽</button>
+        <button class="button" type="button">9 900 ₽</button>
       </p>
     </li>
     <li>
-      <h3>КВАСТ</h3>
-     <p>Промо-сайт производителя крафтового кваса</p>
+      <p class="solutions">кваст</p>
+     <p class="solutions-options">Промо-сайт производителя крафтового кваса</p>
       <img src="img/img-kvast1.svg" width="362" height="580">
        <p>
-        <button type="button">9 900 ₽</button>
+        <button class="button" type="button">9 900 ₽</button>
       </p>
     </li>
   </ul>
@@ -101,45 +102,45 @@ alt="Логотип дизайн-студии Nёrd's">
   <section>
     <ul>
       <li>
-        <a>1</a>
+        <a class="button">1</a>
       </li>
       <li>
-        <a href="#">2</a>
+        <a class="button" href="#">2</a>
       </li>
       <li>
-        <a href="#">3</a>
+        <a class="button" href="#">3</a>
       </li>
       <li>
-        <a href="#">Следующая</a>
+        <a class="button" href="#">Следующая</a>
       </li>
     </ul>
 
   </section>
 
-  <section>
+    <section class="contacts">
     <h2>NЁRDS DESIGN STUDIO</h2>
     <p>191186, Санкт-Петербург,</p>
     <p>ул. Б. Конюшенная, д. 19/8</p> 
-    <p>тел.<a href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-    <a href="#">Карта</a>
-    <button type="button">Обратная связь</button>
+    <p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+    <a class="contacts-map" href="#">Карта</a>
+    <button class="button" type="button">Обратная связь</button>
 
   </section>
   </main>
 
-  <footer>
-    <section>
+ <footer class="page-footer main-footer">
+    <section class="footer-social">
     <h3>Давайте дружить, это выгодно!</h3>
     <p>Скидка 10% для друзей из соцсетей.</p>
     <ul>
       <li>
-        <a href="#">Вконтакте</a>
+        <a class="social-button" href="#">Вконтакте</a>
       </li>
       <li>
-        <a href="#">Фейсбук</a>
+        <a class="social-button" href="#">Фейсбук</a>
       </li>
       <li>
-        <a href="#">Инстаграм</a>
+        <a class="social-button" href="#">Инстаграм</a>
       </li>
     </ul>
   </section>
