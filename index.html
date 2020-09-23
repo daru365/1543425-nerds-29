@@ -8,7 +8,7 @@
     <link href="style.css" rel="stylesheet">
   </head>
   
-  <body class="page-body">
+  <body link="white" class="page-body">
  
   <header class="main-header">
   
@@ -22,13 +22,14 @@ alt="Логотип дизайн-студии Nёrd's">
   		<li><a href="#">Клиенты</a></li>
   		<li><a href="catalog.html">Магазин</a></li>
   		<li><a href="#">Контакты</a></li>
+      <li><a href="#"><img src="img/cart-icon.svg" width="15" height="15" alt="">Корзина</a></li>
+
   	</ul>
 
   		<p class="slogan"><b>Долго, дорого, скурпулезно.</b></p>
 
-  		<p class="slogan.comment">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+  		<p class="slogan-comment">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
 	
-	<p><a class="basket-link" href="#">Корзина</a></p>
 	</nav>
 
   	<a class="more-link" href="#">Узнать больше</a>
@@ -42,20 +43,20 @@ alt="Логотип дизайн-студии Nёrd's">
 	<section class="options">
     <ul class="option-link">
       <li class="option-items">
-        <h3>ВЕБ-САЙТЫ</h3>
+        <p class="option-name">веб-сайты</p>
         Мир никогда не будет прежним после того как увидит ваш сайт!
         <a class="button">
-        <a class="button.button-red" href="#">ЗАКАЗАТЬ</a>
+        <a class="button button-red" href="#">ЗАКАЗАТЬ</a>
       </li>
       <li class="option-items">
-        <h3>ПРИЛОЖЕНИЯ</h3>
+        <p class="option-name">приложения</p>
         Покорите топ-10 приложений в AppStore и Google Play.
-        <a class="button.button-green" href="#">ЗАКАЗАТЬ</a>
-      </li class="option-items">
+        <a class="button button-green" href="#">ЗАКАЗАТЬ</a>
+      </li>
       <li class="option-items">
-        <h3>ПРЕЗЕНТАЦИИ</h3>
+        <p class="option-name">презентации</p>
         Вы даже не подозреваете, насколько вы изумительны!
-        <a class="button.button-yellow" href="#">ЗАКАЗАТЬ</a>
+        <a class="button button-yellow" href="#">ЗАКАЗАТЬ</a>
       </li>
     </ul>
   </section>
@@ -64,7 +65,7 @@ alt="Логотип дизайн-студии Nёrd's">
   	<h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
   	Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.
 
-  	<h3>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h3>
+  	<h3 class="about-slogan">выполняем заказы на разработку:</h3>
   	<ul class="about-list">
   		<li class="about-items">Веб-сайтов любой сложности</li>
   		<li class="about-items">Мобильных приложений для IOS и Android</li>
@@ -75,23 +76,21 @@ alt="Логотип дизайн-студии Nёrd's">
   	 <img src="img/nerds-illustration1.svg" width="630" height="208">
 	</a>
 
-	<p>
-		C 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ
-	</p>
+	<p class="features">с 2004 года любим точность во всём:</p>
 	
-		<p class="big-numbers">146<sup>%</sup></p>
+		<p class="features-percent">146<sup>%</sup></p>
 		Уровень самоотдачи
-		<p class="big-numbers">100<sup>%</sup></p>
+		<p class="features-percent">100<sup>%</sup></p>
 		Соблюдение сроков
-		<p class="big-numbers">50<sup>%</sup></p>
+		<p class="features-percent">50<sup>%</sup></p>
 		Минимальная предоплата
 	
 
 	 <div class="gallery">
-	  <img src="img/Group5.svg" width="199" height="67.82">
-      <img src="img/logo-2.svg" width="209" height="90">
-      <img src="img/logo-3.svg" width="185" height="52">
-      <img src="img/logo-4.svg" width="173" height="84">
+	  <img src="img/Group5.svg" width="199" height="67.82" alt="html academy">
+      <img src="img/logo-2.svg" width="209" height="90" alt="Barbershop Borodinski">
+      <img src="img/logo-3.svg" width="185" height="52" alt="Pink">
+      <img src="img/logo-4.svg" width="173" height="84" alt="Mishka">
     </div>	
   </section>
 
@@ -101,7 +100,7 @@ alt="Логотип дизайн-студии Nёrd's">
   	<p>ул. Б. Конюшенная, д. 19/8</p>	
   	<p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
   	<a class="contacts-map" href="#">Карта</a>
-  	<button class="button" type="button">Обратная связь</button>
+  	<button class="button" type="button">Напишите нам</button>
 
   </section>
   </main>
@@ -113,12 +112,15 @@ alt="Логотип дизайн-студии Nёrd's">
   	<ul>
       <li>
         <a class="social-button" href="#">Вконтакте</a>
+        <img class="vk-icon" src="img/vk-icon.svg" width="81" height="81" alt="">
       </li>
       <li>
         <a class="social-button" href="#">Фейсбук</a>
+        <img class="fb-icon" src="img/fb-icon.svg" width="81" height="81" alt="">
       </li>
       <li>
         <a class="social-button" href="#">Инстаграм</a>
+        <img class="insta-icon" src="img/insta-icon.svg" width="81" height="81" alt="">
       </li>
     </ul>
 	</section>

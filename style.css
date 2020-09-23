@@ -1,6 +1,7 @@
 
 :root {
 --basic-lightgrey: #EEEEEE;
+--basic-darkgrey:A6A6A6;
 --basic-coral: #FB565A;
 --basic-green: #00CA74;
 --basic-yellow: #EFC849;
@@ -9,7 +10,8 @@
 }
 
 body{
-    font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  
 }
 
 a {
@@ -17,19 +19,15 @@ a {
 }
 .main-header {
   background-color: var(--basic-lightgrey);
-
+  background-image: url(img/Slide1.svg);
+  background-repeat: no-repeat;
 }
 
 .site-navigation {
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 30px
-
-}
-
-.basket-link {
-  text-transform: uppercase;
-  font-size: 16px;
+  line-height: 30px;
+  
 }
 
 .more-link {
@@ -39,6 +37,20 @@ a {
 
 .slogan {
   font-size: 55px;
+
+}
+
+.options{
+  background-image: url(img/illustration-1.svg);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+ .option-name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 
 .slogan-comment {
@@ -47,15 +59,30 @@ a {
 
 .site-navigation a {
   color: #000000;
+
 }
 
-.big-numbers {
+.about-slogan {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.features {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.features-percent {
   font-size: 45px;
   line-height: 64px;
   font-weight: bold;
 }
 
-.big-numbers sup {
+.features-percent sup {
   font-size: 26px;
   line-height: 40px;
   font-weight: bold;
@@ -64,6 +91,21 @@ a {
 .page-headline {
   font-size: 55px;
   line-height: 55px;
+}
+
+.vk-icon {
+  background-image: url(img/vk.svg);
+  background-repeat: no-repeat;
+}
+
+.fb-icon {
+  background-image: url(img/vk.svg);
+  background-repeat: no-repeat;
+}
+
+.insta-icon {
+  background-image: url(img/vk.svg);
+  background-repeat: no-repeat;
 }
 
 .sorting {
