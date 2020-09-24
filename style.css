@@ -31,8 +31,10 @@ a {
 }
 
 .basket {
-  background-image: url("img/cart-icon.svg");
+  background-image: url(img/cart-icon.svg);
   background-repeat: no-repeat;
+  padding-left: 30px;
+  display: inline;
 }
 
 .more-link {
@@ -113,29 +115,31 @@ a {
   line-height: 55px;
 }
 
-.social-button-vk {
-  background-image: url("img/vk.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 81px;
+.social-button-vk:before {
+  content: "";
+  background-image: url(img/vk.png);
+  background-size: cover;
   height: 81px;
+  width: 81px;
+  display: inline-block;
 }
 
-.social-button-fb {
-  background-image: url("img/fb.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 81px;
+.social-button-fb:before {
+  content: "";
+  background-image: url(img/fb.png);
+  background-size: cover;
   height: 81px;
+  width: 81px;
+  display: inline-block;
 }
 
-.social-button-insta {
-  background: url("img/insta.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 81px;
+.social-button-insta:before {
+  content: "";
+  background-image: url(img/insta.png);
+  background-size: cover;
   height: 81px;
-}
+  width: 81px;
+  display: inline-block;
 
 .sorting {
   text-transform: uppercase;
