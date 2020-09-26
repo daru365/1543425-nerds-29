@@ -10,24 +10,50 @@
 }
 
 body{
+  margin: 0;
+  padding: 0;
   font-family: 'Roboto', Arial, sans-serif;
-  
 }
 
 a {
   text-decoration: none;
 }
+
+.main-header-logo {
+  padding-left: 140px;
+  padding-top: 48.98px;  /*не удается сделать отступ сверху*/
+}
+
+.option-items p {
+  margin: 0 10px;
+}
+
 .main-header {
   background-color: var(--basic-lightgrey);
-  background-image: url(img/Slide1.svg);
-  background-repeat: no-repeat;
+  width: 100%;
+  margin-bottom: 0px;
 }
 
 .site-navigation {
-  text-transform: uppercase;
+  display: grid;
   font-size: 16px;
   line-height: 30px;
-  
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.container {
+  width: 1157px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.page-slogan {
+  background-color: var(--basic-lightgrey);
+  background-image: url(img/Slide1.svg);
+  background-repeat: no-repeat;
+  width: 1157px;
+  height: 431px;
 }
 
 .basket {
@@ -42,16 +68,55 @@ a {
   font-size: 16px;
 }
 
+.page {
+  height: 100%;
+}
+
+.main-navigation-wrapper {
+  display: grid;
+  grid-template-columns: 140px 1fr 1fr 1fr 143px;
+  width: 437px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 .slogan {
   font-size: 55px;
-
 }
  
+.option-link {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .option-name {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 365px;
+  padding-bottom: 126px;
+}
+
+.about-us {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .item-web {
@@ -81,7 +146,6 @@ a {
 
 .site-navigation a {
   color: #000000;
-
 }
 
 .about-slogan {
@@ -115,6 +179,17 @@ a {
   line-height: 55px;
 }
 
+.main-footer .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.offer {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
 .social-button-vk:before {
   content: "";
   background-image: url(img/vk.png);
@@ -140,6 +215,7 @@ a {
   height: 81px;
   width: 81px;
   display: inline-block;
+}
 
 .sorting {
   text-transform: uppercase;
@@ -164,4 +240,8 @@ a {
 .solutions-options {
   font-size: 16px;
   line-height: 18px;
+}
+
+.page-headline {
+  background-color: var(--basic-lightgrey);
 }
