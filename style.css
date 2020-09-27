@@ -21,15 +21,14 @@ a {
 
 .logo {
   display: grid;
-  padding-left: 140px;
-  padding-top: 48.98px; 
+  padding-top: 50px; 
+  grid-template-columns: min-content 1fr min-content;
 }
 
 .container {
   width: 1160px;
   display: block;
-  margin-left: 140px;
-  margin-right: 140px;
+  margin: 0 auto;
 }
 
 .option-items p {
@@ -47,11 +46,13 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  display: block;
+  text-align: center;
 }
 
 .main-nav li {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* как уменьшить отступы между ссылками и выровнять панель наверх?*/
+  display: inline-block;
+  margin-right: 45px;
 }
 
 .page-slogan {
@@ -71,7 +72,6 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-
 }
 
 .more-link {
@@ -83,14 +83,6 @@ a {
   height: 100%;
 }
 
-.main-navigation-wrapper ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 10px;
-}
-
 .page-body {
   min-height: 100%;
   display: grid;
@@ -100,6 +92,7 @@ a {
 
 .slogan {
   font-size: 55px;
+  margin: 0;
 }
  
 .option-link {
@@ -119,8 +112,8 @@ a {
 
 .index-columns {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* по-моему, это не работает*/
-  padding-top: 365px;
+  grid-template-columns: 2fr 1fr; 
+  padding-top: 121px;
   padding-bottom: 126px;
 }
 
@@ -192,7 +185,7 @@ a {
 
 .main-footer .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 .offer {
@@ -226,6 +219,11 @@ a {
   height: 81px;
   width: 81px;
   display: inline-block;
+}
+
+.footer-social li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .sorting {
