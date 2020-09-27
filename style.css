@@ -19,9 +19,17 @@ a {
   text-decoration: none;
 }
 
-.main-header-logo {
+.logo {
+  display: grid;
   padding-left: 140px;
-  padding-top: 48.98px;  /*не удается сделать отступ сверху*/
+  padding-top: 48.98px; 
+}
+
+.container {
+  width: 1160px;
+  display: block;
+  margin-left: 140px;
+  margin-right: 140px;
 }
 
 .option-items p {
@@ -35,17 +43,15 @@ a {
 }
 
 .site-navigation {
-  display: grid;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
 }
 
-.container {
-  width: 1157px;
-  margin: 0 auto;
-  padding: 0 10px;
+.main-nav li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* как уменьшить отступы между ссылками и выровнять панель наверх?*/
 }
 
 .page-slogan {
@@ -61,6 +67,11 @@ a {
   background-repeat: no-repeat;
   padding-left: 30px;
   display: inline;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+
 }
 
 .more-link {
@@ -72,10 +83,10 @@ a {
   height: 100%;
 }
 
-.main-navigation-wrapper {
+.main-navigation-wrapper ul {
   display: grid;
-  grid-template-columns: 140px 1fr 1fr 1fr 143px;
-  width: 437px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -108,7 +119,7 @@ a {
 
 .index-columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr; /* по-моему, это не работает*/
   padding-top: 365px;
   padding-bottom: 126px;
 }
@@ -116,7 +127,7 @@ a {
 .about-us {
   font-size: 45px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .item-web {
