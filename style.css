@@ -253,4 +253,24 @@ a {
 
 .page-headline {
   background-color: var(--basic-lightgrey);
+  text-align: center;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 117px;
+}
+
+.catalog-columns {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.catalog-headline {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.pages li {
+  display: inline-block;
+  margin-right: 5px;
 }
