@@ -94,6 +94,10 @@ a {
   font-size: 55px;
   margin: 0;
 }
+
+.options {
+  padding-top: 80px;
+}
  
 .option-link {
   display: grid;
@@ -166,6 +170,14 @@ a {
   text-transform: uppercase;
 }
 
+.features-columns {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
 .features-percent {
   font-size: 45px;
   line-height: 64px;
@@ -178,9 +190,31 @@ a {
   font-weight: bold;
 }
 
+.features-percent p {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .page-headline {
   font-size: 55px;
   line-height: 55px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.logo2 {
+  margin-left: 95px;
+}
+
+.logo3 {
+  margin-left: 104px;
+}
+
+.logo4 {
+  margin-left: 120px;
 }
 
 .main-footer .container {
@@ -240,15 +274,16 @@ a {
 }
 
 .solutions {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
+  margin-left: 250px;
 }
 
-.solutions-options {
-  font-size: 16px;
-  line-height: 18px;
+.solution-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  list-style: none;
 }
 
 .page-headline {
@@ -273,4 +308,9 @@ a {
 .pages li {
   display: inline-block;
   margin-right: 5px;
+}
+
+.map {
+  margin: 0;
+  padding: 0;
 }
