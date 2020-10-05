@@ -286,6 +286,7 @@ a {
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 55px;
 }
 
 .sorting-options li {
@@ -295,19 +296,21 @@ a {
   line-height: 18px;
 }
 
-.solutions {
-  padding-left: 141px;
+.sorting-options {
+  display: block;
+  padding-left: 400px;
+  text-transform: uppercase;
+  margin-top: -45px;
+  margin-bottom: 48px;
 }
+
 
 .solution-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 0;
   margin-bottom: 25px;
-}
-
-.solution-item {
-  flex: 1 0 50%;
 }
 
 .catalog-page {
@@ -316,6 +319,7 @@ a {
 
 .page-headline {
   text-align: center;
+  font-weight: bold;
   margin: 0;
   padding-top: 50px;
   padding-bottom: 117px;
@@ -332,23 +336,59 @@ a {
   text-transform: uppercase;
 }
 
-.pages {
-  padding-left: 270px;
+.pagination {
+  padding-left: 0; 
   padding-bottom: 60px;
+  padding-top: 54px;
 }
 
-.pages li {
+.pagination li {
   display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
-.solution-item {
-  width: 360px;
+.pagination a {
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 16px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.pagination .next {
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 78px;
+  padding-right: 77px;
+}
+
+.button-pagination {
+  border: 2px solid;
+  border-color: var(--basic-lightgrey);
+  height: 50px;
+  width: 50px;
+  background-color: var(--basic-lightgrey);
 }
 
 .solution-item-description h3 {
   text-transform: uppercase;
   font-size: 18px;
   font-weight: bold;  
+  text-align: center;
+  padding-top: 26px;
+}
+
+.solution-item-description p{
+  color: var(--basic-darkgrey);
+  display: block;
+  width: 255px;
+  height: 37px;
+  text-align: center;
+  padding-left: 52px;
 }
 
 .solution-item-description {
@@ -356,6 +396,27 @@ a {
   text-align: center;
   width: 360px;
   height: 231px;
-  border: 3px solid grey; /*граница для себя, чтобы видеть*/
-  background-color: var(--basic-white);
+  background-color: var(--basic-lightgrey);
+  position: absolute;
+  margin-top: -230px;
+}
+
+.solution-item button {
+  border: 2px solid;
+  border-color: var(--basic-coral);
+  background-color: var(--basic-coral);
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 16px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+.map-marker {
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  margin-left: 640px;
+  margin-top: -205px;
 }
