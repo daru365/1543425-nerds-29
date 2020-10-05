@@ -50,11 +50,13 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
-  display: block;
 }
 
 .main-nav li {
@@ -220,8 +222,9 @@ a {
   justify-content: space-between;
 }
 
-.contacts-container {
+.contacts {
   position: relative;
+  left: -95px;
 }
 
 .contacts-block {
@@ -278,21 +281,22 @@ a {
   margin-top: 38px;
 }
 
-.sorting {
+.sorting-headline {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
   line-height: 30px;
 }
 
-.sorting-options {
-  font-weight: normal;
+.sorting-options li {
+  display: inline-block;
+  padding-left: 25px;
   font-size: 14px;
   line-height: 18px;
 }
 
 .solutions {
-  margin-left: 250px;
+  padding-left: 141px;
 }
 
 .solution-list {
@@ -300,13 +304,17 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 25px;
-  list-style: none;
-  flex-basis: 100%;
 }
 
+.solution-item {
+  flex: 1 0 50%;
+}
+
+.catalog-page {
+ background-color: var(--basic-lightgrey);
+}
 
 .page-headline {
-  background-color: var(--basic-lightgrey);
   text-align: center;
   margin: 0;
   padding-top: 50px;
@@ -324,11 +332,30 @@ a {
   text-transform: uppercase;
 }
 
+.pages {
+  padding-left: 270px;
+  padding-bottom: 60px;
+}
+
 .pages li {
   display: inline-block;
-  margin-right: 5px;
 }
 
 .solution-item {
   width: 360px;
+}
+
+.solution-item-description h3 {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;  
+}
+
+.solution-item-description {
+  display: block;
+  text-align: center;
+  width: 360px;
+  height: 231px;
+  border: 3px solid grey; /*граница для себя, чтобы видеть*/
+  background-color: var(--basic-white);
 }
