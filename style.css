@@ -42,6 +42,50 @@ a {
   text-transform: uppercase;
 }
 
+.option-items a {
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.option-items p {
+  margin-bottom: 49px;
+}
+
+.button-red {
+  border: 2px solid;
+  border-color: var(--basic-coral);
+  border-radius: 3px;
+  background-color: var(--basic-coral);
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 39px;
+}
+
+.button-green {
+  border: 2px solid;
+  border-color: var(--basic-green);
+  border-radius: 3px;
+  background-color: var(--basic-green);
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 39px;
+}
+
+.button-yellow {
+  border: 2px solid;
+  border-color: var(--basic-yellow);
+  border-radius: 3px;
+  background-color: var(--basic-yellow);
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 40px;
+  padding-left: 39px;
+}
+
 .main-header {
   background-color: var(--basic-lightgrey);
   width: 100%;
@@ -52,11 +96,19 @@ a {
 .site-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center; 
+  padding-top: 20px;
+  margin-left: -60px;
+  margin-bottom: 20px;
+}
+
+.site-navigation a {
   font-size: 16px;
   line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-black);
+
 }
 
 .main-nav li {
@@ -76,20 +128,43 @@ a {
   background-position: right center;
 }
 
-.basket {
-  padding-left: 30px;
-  display: inline;
+.basket::before { /*проблемы с корзиной и иконкой*/
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 82px;
+  left: 1185px;
+  height: 15px;
+  width: 15px;
+  background-image: url("img/cart-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.basket a {
   font-size: 16px;
   line-height: 30px;
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-black);
-  align-items: center;
-  padding-top: 16px;
 }
 
 .more-link {
-  text-transform: uppercase;
+  border: 2px solid;
+  width: 240px;
+  height: 50px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-right: 54px;
+  padding-left: 54px;
+  border-color: var(--basic-coral);
+  border-radius: 3px;
+  background-color: var(--basic-coral);
+  color: var(--basic-white);
+  font-weight: bold;
   font-size: 16px;
+  text-align: center; 
+  text-transform: uppercase;
 }
 
 .page {
@@ -104,13 +179,24 @@ a {
 }
 
 .slogan {
+  font-weight: bold;
   font-size: 55px;
   margin: 0;
   width: 50%;
+  padding-bottom: 25px;
 }
 
 .options {
   padding-top: 80px;
+}
+
+.options::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 1158px;
+  background-color: var(--basic-lightgrey);
+  margin-top: 150px;
 }
  
 .option-link {
@@ -131,7 +217,7 @@ a {
 .index-columns {
   display: grid;
   grid-template-columns: 2fr 1fr; 
-  padding-top: 121px;
+  padding-top: 180px;
   padding-bottom: 126px;
 }
 
@@ -139,7 +225,29 @@ a {
   font-size: 45px;
   font-style: normal;
   font-weight: bold;
+  width: 651px;
 }
+
+.about-text {
+  width: 646px;
+  font-size: 16px;
+}
+
+.about-list li::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-coral);
+  margin-left: -41px;
+  margin-top: 7px;
+}
+
+.about-list li {
+  list-style: none;
+  height: 50px;
+}
+
 
 .item-web {
   background-image: url("img/illustration-1.png");
@@ -162,20 +270,24 @@ a {
   height: 146px;
 }
 
-.slogan-comment {
+.slogan-comment { /*как сделать перенос после слова "дизайн"?*/
   font-size: 16px;
   width: 400px;
+  margin-bottom: 38px;
+  font-weight: 400;
 }
 
 .site-navigation a {
   color: #000000;
 }
 
-.about-slogan {
+.about h3 {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  padding-top: 40px;
+  padding-bottom: 23px;
 }
 
 .features {
@@ -220,6 +332,31 @@ a {
   display: flex;
   margin-bottom: 126px;
   justify-content: space-between;
+  background-image: /*как расположить все линии между логотипами?*/
+    url("img/line.png"),
+    url("img/line.png"),
+    url("img/line.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gallery::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 1158px;
+  background-color: var(--basic-lightgrey);
+  margin-top: -46px;
+
+}
+
+.gallery::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 1158px;
+  background-color: var(--basic-lightgrey);
+  margin-top: 133px;
 }
 
 .contacts {
@@ -234,17 +371,45 @@ a {
   top: 54px;
   background: white;
   padding: 50px;
+
 }
 
+.button-contacts {
+  border: 2px solid;
+  border-color: var(--basic-coral);
+  border-radius: 3px;
+  background-color: var(--basic-coral);
+  width: 219px;
+  height: 50px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  font-size: 16px;
+}
+
+.contacts-block h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contacts-address { /*не получается задать ширину блока и цвет текста*/
+  font-size: 16px;
+  width: 230px;
+  color: var(--basic-darkgrey);
+
+}
 .main-footer .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
+.footer-offer {
+  margin-left: 139px;
+}
+
 .offer {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
-  line-height: 36px;
   margin-top: 75px;
 }
 
@@ -404,6 +569,7 @@ a {
 .solution-item button {
   border: 2px solid;
   border-color: var(--basic-coral);
+  border-radius: 3px;
   background-color: var(--basic-coral);
   color: var(--basic-white);
   font-weight: bold;
@@ -413,10 +579,11 @@ a {
   text-align: center;
 }
 
-.map-marker {
+.contacts:before img { /*как правильно подключить маркер?*/
+  content: "";
+  background-image: url("img/map-marker.png");
   display: block;
-  position: absolute;
-  background-color: transparent;
-  margin-left: 640px;
-  margin-top: -205px;
+  background-size: cover;
+  position: relative;
+  z-index: 
 }
