@@ -1,12 +1,19 @@
 
 :root {
 --basic-lightgrey: #EEEEEE;
---basic-darkgrey:A6A6A6;
+--basic-darkgrey: #A6A6A6;
 --basic-coral: #FB565A;
 --basic-green: #00CA74;
 --basic-yellow: #EFC849;
 --basic-white: #ffffff;
 --basic-black: #000000;
+--basic-darkcoral: #E74246;
+--basic-ultradarkcolor: #D7373B;
+--basic-darkgreen: #00BC6C;
+--basic-ultradarkgreen: #00AA62;
+--basic-darkyellow: #EAB534;
+--basic-ultradarkyellow: #E5A722;
+--basic-mediumgrey: #E1E1E1;
 }
 
 body{
@@ -25,6 +32,34 @@ a {
   grid-template-columns: min-content 1fr min-content;
 }
 
+.logo:active img {
+  color: var(--basic-black);
+  opacity: 0.1;
+}
+
+.site-navigation a:hover,
+.basket a:hover {
+  color: var(--basic-coral);
+}
+
+.site-navigation a:active,
+.basket a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.site-navigation a.active {
+  color: var(--basic-black);
+  content: "";
+  background-image: ("img/coral-line.png");
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 83px;
+  margin-top: 13px;
+}
+
+
 .container {
   width: 1160px;
   display: block;
@@ -36,21 +71,27 @@ a {
   margin: 0 10px;
 }
 
-.option-items h3 {
-  font-weight: bold;
+.option-title {
+  font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
+  margin-top: -3px;
 }
 
 .option-items a {
   text-transform: uppercase;
   color: var(--basic-white);
-  font-weight: bold;
   font-size: 16px;
+  height: 50px;
+  width: 160px;
 }
 
 .option-items p {
   margin-bottom: 49px;
+}
+
+.option-text {
+  margin-top: -25px;
 }
 
 .button-red {
@@ -64,6 +105,14 @@ a {
   padding-left: 39px;
 }
 
+.button-red:hover {
+  background-color: var(--basic-darkcoral);
+}
+
+.button-red:active {
+  background-color: var(--basic-ultradarkcolor);
+}
+
 .button-green {
   border: 2px solid;
   border-color: var(--basic-green);
@@ -73,6 +122,15 @@ a {
   padding-bottom: 15px;
   padding-right: 40px;
   padding-left: 39px;
+}
+
+.button-green:hover {
+  background-color: var(--basic-darkgreen);
+}
+
+.button-green:active {
+  background-color: var(--basic-ultradarkgreen);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .button-yellow {
@@ -86,6 +144,15 @@ a {
   padding-left: 39px;
 }
 
+.button-yellow:hover {
+  background-color: var(--basic-darkyellow);
+}
+
+.button-yellow:active {
+  background-color: var(--basic-ultradarkyellow);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
 .main-header {
   background-color: var(--basic-lightgrey);
   width: 100%;
@@ -97,9 +164,9 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center; 
-  padding-top: 20px;
-  margin-left: -60px;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  margin-left: -82px;
+  margin-bottom: -10px;
 }
 
 .site-navigation a {
@@ -118,22 +185,27 @@ a {
 
 .page-slogan {
   background-color: var(--basic-lightgrey);
-
+  margin-left: -5px;
 }
 
 .style {
   background-image: url(img/Slide1.svg);
   background-repeat: no-repeat;
-  padding: 80px 0;
+  padding: 90px 0;
   background-position: right center;
 }
 
-.basket::before { /*проблемы с корзиной и иконкой*/
+.basket {
+  position: relative;
+  margin-top: 28px;
+}
+
+.basket::before { 
   content: "";
   display: inline-block;
   position: absolute;
-  top: 82px;
-  left: 1185px;
+  top: 7px;
+  left: -30px;
   height: 15px;
   width: 15px;
   background-image: url("img/cart-icon.png");
@@ -161,10 +233,20 @@ a {
   border-radius: 3px;
   background-color: var(--basic-coral);
   color: var(--basic-white);
-  font-weight: bold;
+  font-weight: 500;
   font-size: 16px;
   text-align: center; 
   text-transform: uppercase;
+}
+
+.more-link:hover {
+  background-color: var(--basic-darkcoral);
+}
+
+.more-link:active {
+  background-color: var(--basic-ultradarkcolor);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  color: var(--basic-white);
 }
 
 .page {
@@ -184,6 +266,8 @@ a {
   margin: 0;
   width: 50%;
   padding-bottom: 25px;
+  margin-top: -20px;
+  margin-left: 5px;
 }
 
 .options {
@@ -196,29 +280,24 @@ a {
   height: 2px;
   width: 1158px;
   background-color: var(--basic-lightgrey);
-  margin-top: 150px;
+  margin-top: 112px;
 }
  
 .option-link {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 33px;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.option-name {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
-  text-transform: uppercase;
+  margin-left: -10px;
 }
 
 .index-columns {
   display: grid;
   grid-template-columns: 2fr 1fr; 
-  padding-top: 180px;
-  padding-bottom: 126px;
+  margin-top: 130px;
+  padding-bottom: 35px;
 }
 
 .about-us {
@@ -231,6 +310,11 @@ a {
 .about-text {
   width: 646px;
   font-size: 16px;
+}
+
+.header-picture img {
+  padding-top: 25px;
+  padding-left: 30px;
 }
 
 .about-list li::before {
@@ -270,7 +354,7 @@ a {
   height: 146px;
 }
 
-.slogan-comment { /*как сделать перенос после слова "дизайн"?*/
+.slogan-comment { 
   font-size: 16px;
   width: 400px;
   margin-bottom: 38px;
@@ -290,11 +374,17 @@ a {
   padding-bottom: 23px;
 }
 
+.about {
+  padding-top: -30px;
+}
+
 .features {
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  padding-left: 50px;
+  padding-top: 15px;
 }
 
 .features-columns {
@@ -303,7 +393,6 @@ a {
   margin: 0;
   list-style: none;
 }
-
 
 .features-percent {
   font-size: 45px;
@@ -328,16 +417,39 @@ a {
   line-height: 55px;
 }
 
+.gallery li {
+  position: relative;
+}
+
+.gallery-item:after {
+  content: "";
+  position: absolute;
+  height: 52px;
+  border-right: 2px solid lightgrey;
+  right: -60px;
+  top: 18px;
+}
+
 .gallery {
   display: flex;
   margin-bottom: 126px;
   justify-content: space-between;
-  background-image: /*как расположить все линии между логотипами?*/
-    url("img/line.png"),
-    url("img/line.png"),
-    url("img/line.png");
   background-position: center;
   background-repeat: no-repeat;
+  list-style: none;
+  padding-left: 0;
+}
+
+.gallery li {
+  opacity: 0.2;
+}
+
+.gallery li:hover {
+  opacity: 1;
+}
+
+.gallery li:active {
+  opacity: 0.1;
 }
 
 .gallery::before {
@@ -384,6 +496,8 @@ a {
   text-transform: uppercase;
   color: var(--basic-white);
   font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 .contacts-block h3 {
@@ -392,19 +506,23 @@ a {
   text-transform: uppercase;
 }
 
-.contacts-address { /*не получается задать ширину блока и цвет текста*/
+.contacts-address { 
   font-size: 16px;
   width: 230px;
   color: var(--basic-darkgrey);
-
 }
+
+.contacts-phone{
+  color: var(--basic-darkgrey);
+}
+
 .main-footer .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
 }
 
 .footer-offer {
-  margin-left: 139px;
+  margin-left: 90px;
 }
 
 .offer {
@@ -415,8 +533,11 @@ a {
 
 .social-button-vk:before {
   content: "";
-  background-image: url(img/vk.png);
-  background-size: cover;
+  background-color: var(--basic-mediumgrey);
+  border-radius: 45px;
+  background-image: url("img/vk-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 81px;
   width: 81px;
   display: inline-block;
@@ -424,8 +545,11 @@ a {
 
 .social-button-fb:before {
   content: "";
-  background-image: url(img/fb.png);
-  background-size: cover;
+  background-color: var(--basic-mediumgrey);
+  border-radius: 45px;
+  background-image: url("img/fb-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 81px;
   width: 81px;
   display: inline-block;
@@ -433,8 +557,11 @@ a {
 
 .social-button-insta:before {
   content: "";
-  background-image: url(img/insta.png);
-  background-size: cover;
+  background-color: var(--basic-mediumgrey);
+  border-radius: 45px;
+  background-image: url("img/insta-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
   height: 81px;
   width: 81px;
   display: inline-block;
@@ -444,6 +571,14 @@ a {
   display: inline-block;
   margin-right: 10px;
   margin-top: 38px;
+}
+
+.footer-social a:hover:before {
+  background-color: var(--basic-darkcoral);
+}
+
+.footer-social a:active:before {
+  background-color: var(--basic-ultradarkcolor);
 }
 
 .sorting-headline {
@@ -579,11 +714,14 @@ a {
   text-align: center;
 }
 
-.contacts:before img { /*как правильно подключить маркер?*/
+.contacts:before { 
   content: "";
   background-image: url("img/map-marker.png");
   display: block;
   background-size: cover;
-  position: relative;
-  z-index: 
+  position: absolute;
+  width: 231px;
+  height: 190px;
+  top: 86px;
+  right: 106px;
 }
