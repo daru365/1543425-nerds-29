@@ -28,7 +28,8 @@ a {
 
 .logo {
   display: grid;
-  padding-top: 50px; 
+  padding-top: 65px; 
+  padding-left: 46px;
   grid-template-columns: min-content 1fr min-content;
 }
 
@@ -74,8 +75,9 @@ a {
 .option-title {
   font-weight: 700;
   font-size: 24px;
+  line-height: 30px;
   text-transform: uppercase;
-  margin-top: -3px;
+  margin-top: 2px;
 }
 
 .option-items a {
@@ -91,7 +93,9 @@ a {
 }
 
 .option-text {
-  margin-top: -25px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: -31px;
 }
 
 .button-red {
@@ -100,8 +104,8 @@ a {
   border-radius: 3px;
   background-color: var(--basic-coral);
   padding-top: 17px;
-  padding-bottom: 15px;
-  padding-right: 40px;
+  padding-bottom: 13px;
+  padding-right: 39px;
   padding-left: 39px;
 }
 
@@ -119,8 +123,8 @@ a {
   border-radius: 3px;
   background-color: var(--basic-green);
   padding-top: 17px;
-  padding-bottom: 15px;
-  padding-right: 40px;
+  padding-bottom: 13px;
+  padding-right: 38px;
   padding-left: 39px;
 }
 
@@ -139,8 +143,8 @@ a {
   border-radius: 3px;
   background-color: var(--basic-yellow);
   padding-top: 17px;
-  padding-bottom: 15px;
-  padding-right: 40px;
+  padding-bottom: 13px;
+  padding-right: 38px;
   padding-left: 39px;
 }
 
@@ -165,7 +169,7 @@ a {
   flex-direction: row;
   justify-content: center; 
   padding-top: 10px;
-  margin-left: -82px;
+  margin-left: -37px;
   margin-bottom: -10px;
 }
 
@@ -205,7 +209,7 @@ a {
   display: inline-block;
   position: absolute;
   top: 7px;
-  left: -30px;
+  left: 5px;
   height: 15px;
   width: 15px;
   background-image: url("img/cart-icon.png");
@@ -226,8 +230,8 @@ a {
   width: 240px;
   height: 50px;
   padding-top: 17px;
-  padding-bottom: 15px;
-  padding-right: 54px;
+  padding-bottom: 13px;
+  padding-right: 52px;
   padding-left: 54px;
   border-color: var(--basic-coral);
   border-radius: 3px;
@@ -237,6 +241,7 @@ a {
   font-size: 16px;
   text-align: center; 
   text-transform: uppercase;
+  margin-left: 48px;
 }
 
 .more-link:hover {
@@ -263,11 +268,12 @@ a {
 .slogan {
   font-weight: bold;
   font-size: 55px;
+  line-height: 55px;
   margin: 0;
   width: 50%;
-  padding-bottom: 25px;
-  margin-top: -20px;
-  margin-left: 5px;
+  padding-bottom: 11px;
+  margin-top: -15px;
+  margin-left: 48px;
 }
 
 .options {
@@ -286,35 +292,39 @@ a {
 .option-link {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 33px;
+  grid-column-gap: 73px;
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: -10px;
+  margin-left: 35px;
 }
 
 .index-columns {
   display: grid;
   grid-template-columns: 2fr 1fr; 
+  width: 1174px;
   margin-top: 130px;
-  padding-bottom: 35px;
+  margin-bottom: 75px;
+  padding-left: 45px;
 }
 
 .about-us {
   font-size: 45px;
-  font-style: normal;
-  font-weight: bold;
-  width: 651px;
+  line-height: 45px;
+  font-weight: 800;
+  padding-top: 12px;
+  padding-left: 3px;
 }
 
 .about-text {
-  width: 646px;
+  margin-top: -10px;
   font-size: 16px;
+  line-height: 24px;
 }
 
 .header-picture img {
   padding-top: 25px;
-  padding-left: 30px;
+  padding-left: 18px;
 }
 
 .about-list li::before {
@@ -323,13 +333,15 @@ a {
   width: 25px;
   height: 2px;
   background-color: var(--basic-coral);
-  margin-left: -41px;
-  margin-top: 7px;
+  margin-left: -39px;
+  margin-top: 9px;
 }
 
 .about-list li {
   list-style: none;
   height: 50px;
+  margin-left: -3px;
+  margin-top: -2px;
 }
 
 
@@ -357,8 +369,10 @@ a {
 .slogan-comment { 
   font-size: 16px;
   width: 400px;
-  margin-bottom: 38px;
+  margin-bottom: 55px;
+  margin-left: 48px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 .site-navigation a {
@@ -370,8 +384,8 @@ a {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  padding-top: 40px;
-  padding-bottom: 23px;
+  padding-top: 25px;
+  padding-bottom: 9px;
 }
 
 .about {
@@ -383,8 +397,8 @@ a {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
-  padding-left: 50px;
-  padding-top: 15px;
+  padding-left: 36px;
+  padding-top: 16px;
 }
 
 .features-columns {
@@ -392,12 +406,18 @@ a {
   padding: 0;
   margin: 0;
   list-style: none;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.features-columns li:nth-child(3) {
+  margin-left: 10px;
 }
 
 .features-percent {
   font-size: 45px;
   line-height: 64px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .features-percent sup {
@@ -408,8 +428,11 @@ a {
 
 .features-percent p {
   font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 18px;
+  padding-left: 5px;
+  padding-top: -5px;
 }
 
 .page-headline {
@@ -426,7 +449,7 @@ a {
   position: absolute;
   height: 52px;
   border-right: 2px solid lightgrey;
-  right: -60px;
+  right: -50px;
   top: 18px;
 }
 
@@ -442,8 +465,22 @@ a {
 
 .gallery li {
   opacity: 0.2;
+  margin-left: 75px;
+  padding-top: 20px;
 }
 
+.gallery li:nth-child(2) {
+  margin-top: -15px;
+  margin-left: 5px;
+}
+
+.gallery li:nth-child(3) {
+  padding-right: -20px;
+}
+
+.gallery li:nth-child(4) {
+  margin-top: -10px;
+}
 .gallery li:hover {
   opacity: 1;
 }
