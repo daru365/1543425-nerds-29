@@ -44,12 +44,71 @@ alt="Логотип дизайн-студии Nёrd's">
     <div class="catalog-columns container">
 
   <section class="main-filters">
-    <p>стоимость</p>
-    <!--для фильтра стоимость -->
-    <p>сетка</p>
-    <!--для фильтра сетка -->
-    <p>особенности</p>
-    <!--для фильтра особенности -->
+    <form method="get" action="https://echo.htmlacademy.ru">
+    <fieldset class="filter-item">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min" tabindex="0"></div>
+            <div class="toggle toggle-max" tabindex="0"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">
+              от <input type="number" name="min-price" value="0">
+            </label>
+            <label class="max-price">
+              до <input type="number" name="max-price" value="15000">
+            </label>
+          </div>
+        </div>
+    </fieldset>
+
+    <fieldset class="selection-list">
+        <legend>Сетка:</legend>
+        <ul>
+          <li class="filter-option filter-radio">
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="adaptive" id="filter-adaptive" checked>
+            <label for="filter-adaptive">Адаптивная</label>
+          </li>
+          <li class="filter-option filter-radio">
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="fixed" id="filter-fixed">
+            <label for="filter-fixed">Фиксированная</label>
+          </li>
+          <li class="filter-option filter-radio">
+            <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="rubber" id="filter-rubber">
+            <label for="filter-rubber">Резиновая</label>
+          </li>
+        </ul>
+      </fieldset>
+  </form>
+    <fieldset class="checkbox-list">
+        <legend>Особенности:</legend>
+        <ul>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider" id="filter-slider" checked>
+            <label for="filter-slider">Слайдер</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="features" id="filter-features">
+            <label for="filter-features">Блок преимуществ</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news" id="filter-news" checked>
+            <label for="filter-news">Новости</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery" id="filter-gallery">
+            <label for="filter-gallery">Галерея</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket" id="filter-basket">
+            <label for="filter-basket">Корзина</label>
+          </li>
+        </ul>
+      </fieldset>
     
     <button class="button" type="button">Показать</button>
   </section>
@@ -62,11 +121,10 @@ alt="Логотип дизайн-студии Nёrd's">
     <li>по типу</li>
     <li>по названию</li>
   </ul>
-<!-- Для формы сортировки -->
 
     <ul class="solution-list">
       <li class="solution-item">
-        <img src="img/img-sedona.jpg" width="360" height="576" alt="Информационнный сайт SEDONA">
+        <a class="item-sedona" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Информационнный сайт SEDONA"></a>
 
         <span class="solution-item-description">
         <h3>sedona</h3>
@@ -77,8 +135,8 @@ alt="Логотип дизайн-студии Nёrd's">
 
         </span>
       </li>
-      <li class="solution-item">
-        <img src="img/img-pink.jpg" width="358" height="576" alt="Интерфейс сайта Pink">
+      <li class="solution-item pink">
+        <a class="item-pink"href="#"><img src="img/img-pink.jpg" width="358" height="576" alt="Интерфейс сайта Pink"></a>
 
         <span class="solution-item-description">
         <h3>pink app</h3>
@@ -90,8 +148,8 @@ alt="Логотип дизайн-студии Nёrd's">
         </span>
       </li>
 
-      <li class="solution-item">
-        <img src="img/img-barbershop.jpg" width="364" height="582" alt="Интерфейс сайта Barbershop">
+      <li class="solution-item barbershop">
+        <a class="item-barbershop" href="#"><img src="img/img-barbershop.jpg" width="364" height="582" alt="Интерфейс сайта Barbershop"></a>
 
         <span class="solution-item-description">
         <h3>barbershop</h3>
@@ -103,9 +161,8 @@ alt="Логотип дизайн-студии Nёrd's">
         </span>
       </li>
 
-      <li class="solution-item">
-       
-        <img src="img/img-mishka.jpg" width="362" height="580" alt="Интерфейс сайта Mishka">
+      <li class="solution-item mishka">
+        <a class="item-mishka" href="#"><img src="img/img-mishka.jpg" width="362" height="580" alt="Интерфейс сайта Mishka"></a>
         
         <span class="solution-item-description">
         <h3>mishka</h3>
@@ -117,8 +174,8 @@ alt="Логотип дизайн-студии Nёrd's">
         </span>
       </li>
 
-      <li class="solution-item">
-        <img src="img/img-aplus.jpg" width="364" height="582" alt="Интерфейс сайта APlus">        
+      <li class="solution-item aplus">
+        <a class="item-aplus" href="#"><img src="img/img-aplus.jpg" width="364" height="582" alt="Интерфейс сайта APlus"></a>        
 
         <span class="solution-item-description">
         <h3>a plus</h3>
@@ -130,8 +187,8 @@ alt="Логотип дизайн-студии Nёrd's">
         </span>
       </li>
 
-      <li class="solution-item">
-        <img src="img/img-kvast.jpg" width="362" height="580" alt="Интерфейс сайта Kvast">
+      <li class="solution-item kvast">
+        <a href="#"><img src="img/img-kvast.jpg" width="362" height="580" alt="Интерфейс сайта Kvast"></a>
 
         <span class="solution-item-description">
         <h3>кваст</h3>
@@ -146,7 +203,7 @@ alt="Логотип дизайн-студии Nёrd's">
 
     <ul class="pagination">
       <li>
-        <a class="button-pagination">1</a>
+        <a class="button-pagination" href="#">1</a>
       </li>
       <li>
         <a class="button-pagination" href="#">2</a>
@@ -167,21 +224,17 @@ alt="Логотип дизайн-студии Nёrd's">
     <img src="img/map1.png" width="1440" height="416" alt="Местоположение студии на карте">
     
     <div class="contacts-block">
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p>191186, Санкт-Петербург,</p>
-      <p>ул. Б. Конюшенная, д. 19/8</p> 
-      <p>тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-      <a class="contacts-map" href="#">Карта</a>
-    <button class="button" type="button">Напишите нам</button>
-
-    <div class="map-marker">
-      <img src="img/map-marker.png" width="231px" height="190px">
-    </div>
+      <h3>nёrds design studio</h3>
+      <p class="contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p> 
+      <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
     
+      <p><button class="button-contacts" type="button">Напишите нам</button></p>
+
     </div>
   </section>
   
   </main>
+
 
   <footer class="main-footer">
     <div class="container">
@@ -202,7 +255,7 @@ alt="Логотип дизайн-студии Nёrd's">
 
     <section class="footer-offer">
       <p class="offer">Давайте дружить, это выгодно!</p>
-    <p>Скидка 10% для друзей из соцсетей.</p>
+      <p class="offer-text">Скидка 10% для друзей из социальных сетей.</p>
   </section>
   
   </div>
