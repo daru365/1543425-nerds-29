@@ -8,15 +8,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   
-  <body link="white" class="page-body">
+  <body class="page-body">
  
   <header class="main-header">
     <div class="container">
     <nav class="main-nav">
+      <div class="logo">
       <a class="main-header-logo" href="index.html">
-        <div class="logo">
-        <img src="img/nerds-logo.svg" width="159.87" height="65"
-alt="Логотип дизайн-студии Nёrd's">
+        <img class="logo-image" src="img/nerds-logo.svg" width="159" height="65" alt="Логотип дизайн-студии Nёrds">
       </a>
 
     <ul class="site-navigation">
@@ -28,22 +27,26 @@ alt="Логотип дизайн-студии Nёrd's">
       
         <div class="basket"><a href="#">Корзина</a></div>
   
-  </div>
-</div>
+    </div>
     </nav>
+      </div>
+    
   </header>
  
   <main>
 
   <section class="catalog-page">
   <div class="container">
+    
     <h1 class="page-headline">Магазин готовых шаблонов</h1>
-
-</section>
+  
+  </div>
+  </section>
     
     <div class="catalog-columns container">
 
   <section class="main-filters">
+    <h2 class="hidden-title">Фильтры</h2>
     <form method="get" action="https://echo.htmlacademy.ru">
     <fieldset class="filter-item">
         <legend>Стоимость:</legend>
@@ -111,8 +114,9 @@ alt="Логотип дизайн-студии Nёrd's">
       </fieldset>
     
     <button class="button" type="button">Показать</button>
+
+  </form> 
   </section>
- </form> 
 
    <section class="solutions">
 
@@ -127,79 +131,79 @@ alt="Логотип дизайн-студии Nёrd's">
       <li class="solution-item">
         <a class="item-sedona" href="#"><img src="img/img-sedona.jpg" width="360" height="576" alt="Информационнный сайт SEDONA"></a>
 
-        <span class="solution-item-description">
+        <div class="solution-item-description">
         <h3>sedona</h3>
         <p>Информационный сайт для туристов</p>
         <p class="solution-item-price">
           <button class="button" type="button">9 900 ₽</button>
         </p>
 
-        </span>
+        </div>
 
     </li>
       <li class="solution-item">
         <a class="item-pink" href="#"><img src="img/img-pink.jpg" width="358" height="576" alt="Интерфейс сайта Pink"></a>
 
-        <span class="solution-item-description">
+        <div class="solution-item-description">
         <h3>pink app</h3>
         <p>Продуктовый лендинг приложения для iOS и Android</p>
         <p class="solution-item-price">
           <button class="button" type="button">9 900 ₽</button>
         </p>
 
-        </span>
+        </div>
       </li>
 
       <li class="solution-item">
         <a class="item-barbershop" href="#"><img src="img/img-barbershop.jpg" width="364" height="582" alt="Интерфейс сайта Barbershop"></a>
 
-        <span class="solution-item-description">
+        <div class="solution-item-description">
         <h3>barbershop</h3>
         <p>Сайт салона красоты.Для мужчин, да.</p>
         <p class="solution-item-price">
           <button class="button" type="button">9 900 ₽</button>
         </p>
 
-        </span>
+        </div>
       </li>
 
       <li class="solution-item">
         <a class="item-mishka" href="#"><img src="img/img-mishka.jpg" width="362" height="580" alt="Интерфейс сайта Mishka"></a>
         
-        <span class="solution-item-description">
+        <div class="solution-item-description">
         <h3>mishka</h3>
         <p>Интернет-магазин вязаных игрушек</p>
         <p class="solution-item-price">
           <button class="button" type="button">9 900 ₽</button>
         </p>
 
-        </span>
+        </div>
       </li>
 
       <li class="solution-item">
         <a class="item-aplus" href="#"><img src="img/img-aplus.jpg" width="364" height="582" alt="Интерфейс сайта APlus"></a>        
 
-        <span class="solution-item-description">
+        <div class="solution-item-description">
         <h3>a plus</h3>
         <p>Лендинг курсов повышения квалификации</p>
         <p class="solution-item-price">
           <button class="button" type="button">9 900 ₽</button>
         </p>
 
-        </span>
+        </div>
       </li>
 
       <li class="solution-item">
         <a href="#"><img src="img/img-kvast.jpg" width="362" height="580" alt="Интерфейс сайта Kvast"></a>
 
-        <span class="solution-item-description">
+        <div class="solution-item-description">
         <h3>кваст</h3>
         <p>Промо-сайт производителя крафтового кваса</p>
         <p class="solution-item-price">
           <button class="button" type="button">9 900 ₽</button>
         </p>
 
-        </span>
+        </div>
       </li>     
     </ul>
 
@@ -222,9 +226,12 @@ alt="Логотип дизайн-студии Nёrd's">
   </section>
   </div>
 
-  <section class="contacts container">
-    <img src="img/map1.png" width="1440" height="416" alt="Местоположение студии на карте">
+  <section class="contacts">
     
+    <div class="map-marker">
+    <img src="img/map1.png" class="contacts-map" width="1440" height="416" alt="Местоположение студии на карте">
+    </div>
+
     <div class="contacts-block">
       <h3>nёrds design studio</h3>
       <p class="contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p> 
@@ -242,6 +249,7 @@ alt="Логотип дизайн-студии Nёrd's">
     <div class="container">
       
       <section class="footer-social">
+      <h3 class="hidden-title">Социальные сети</h3>
     <ul>
       <li>
         <a class="social-button social-button-vk" href="#"></a>
@@ -256,11 +264,42 @@ alt="Логотип дизайн-студии Nёrd's">
       </section>
 
     <section class="footer-offer">
+    <h3 class="hidden-title">Специальное предложение</h3>
       <p class="offer">Давайте дружить, это выгодно!</p>
       <p class="offer-text">Скидка 10% для друзей из социальных сетей.</p>
   </section>
   
   </div>
     </footer>
+
+    <section class="modal-contacts">
+      <h3>Напишите нам</h3>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="modal-container">
+      <div>
+      <p class="modal-description">Ваше имя:</p>
+        <p>
+        <input class="name-user" id="name" type="text" name="login" placeholder="Имя Фамилия">
+      </p>
+      </div>
+      <div>
+      <p class="modal-description">Ваш e-mail:</p>
+        <p>
+        <input class="login-user" id="login-login" type="email" name="email" placeholder="email@example.com">
+      </p> 
+      </div>
+      </div>
+      <div class="text-container">
+      <p class="modal-description">Текст письма</p>
+        <p>
+        <input class="user-text" id="text" type="text" name="text" placeholder="В свободной форме">
+      </p>   
+      </div>
+        <button class="modal-button" type="submit">Отправить</button>
+    </form>
+
+  <button class="modal-close" type="button" aria-label="Закрыть"></button>
+      
+    </section>
   </body>
 </html>
