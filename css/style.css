@@ -33,23 +33,19 @@ a {
 
 /*Index*/
 
-.page {
-  height: 100%;
-}
-
 .page-body {
   min-height: 100%;
+  max-width: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  
+  overflow-x: hidden;
 }
 
 .container {
   width: 1160px;
   display: block;
   margin: 0 auto;
-  padding: 0 auto;
 }
 
 /*header*/
@@ -161,6 +157,10 @@ a {
   background-color: var(--basic-lightgrey);
 }
 
+.slide-wrapper {
+  position: relative;
+}
+
 .slide-wrapper-1 {
   background-image: url(../img/Slide1.svg);
   background-repeat: no-repeat;
@@ -196,8 +196,8 @@ a {
 .slider-controls {
   position: absolute;
   display: flex;
-  left: 630px;
-  top: 448px;
+  left: 576px;
+  top: 313px;
   width: 88px;
   justify-content: space-between;
 }
@@ -219,9 +219,12 @@ a {
 .slider-controls .current {
   width: 18px;
   height: 18px;
-  background-color: var(--basic-grey);
-  border: 6px solid white;
-  border-radius: 50%;
+  background-color: var(--basic-white);
+  background-image: url(../img/ellipse.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .more-link {
@@ -259,13 +262,13 @@ a {
   margin: 0;
   width: 50%;
   padding-bottom: 11px;
-  margin-top: -15px;
+  margin-top: -17px;
 }
 
 .slide-comment { 
   font-size: 16px;
   width: 400px;
-  margin-bottom: 55px;
+  margin-bottom: 57px;
   font-weight: 400;
   line-height: 24px;
 }
@@ -303,6 +306,10 @@ a {
 
 .option-items p {
   margin-bottom: 49px;
+}
+
+.option-link li:nth-child(3) {
+  margin-left: 2px;
 }
 
 .option-text {
@@ -457,7 +464,7 @@ a {
   list-style: none;
   height: 50px;
   margin-left: -3px;
-  margin-top: -2px;
+  margin-top: -1px;
 }
 
 .about h3 {
@@ -616,10 +623,12 @@ a {
 .contacts {
   position: relative;
   margin-bottom: 6px;
+  margin-top: -4px;
 }
 
 .map-marker {
   display: block;  
+  position: relative;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -640,12 +649,10 @@ a {
 
 .contacts-block {
   display: block;
-  position: absolute;
-  top: 67px;
-  left: 95px;
   background: var(--basic-white);
+  margin-top: -367px;
   padding: 50px;
-  width: 230px;
+  width: 220px;
 }
 
 .button-contacts {
@@ -660,7 +667,7 @@ a {
   font-size: 16px;
   cursor: pointer;
   margin-top: 22px;
-  margin-bottom: -10px;
+  margin-bottom: -18px;
 }
 
 .button-contacts:focus {
@@ -671,13 +678,13 @@ a {
   font-size: 18px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 29px;
+  margin-top: 5px;
 }
 
 .contacts-address { 
   font-size: 16px;
   width: 230px;
-  margin-top: 28px;
+  margin-top: 29px;
   color: var(--basic-darkgrey);
 }
 
@@ -690,6 +697,10 @@ a {
 .main-footer .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+}
+
+.main-footer {
+  margin-top: 53px;
 }
 
 .offer {
@@ -749,8 +760,8 @@ a {
 .footer-social li {
   display: inline-block;
   vertical-align: baseline;
-  margin-right: 9px;
-  margin-top: 48px;
+  margin-right: 7px;
+  margin-top: 45px;
 }
 
 .footer-social a:hover:before {
@@ -861,7 +872,7 @@ a {
   justify-content: space-between;
   padding-left: 0;
   list-style: none;
-  padding-top: 44px;
+  padding-top: 48px;
 }
 
 .solution-list li{
@@ -905,7 +916,7 @@ a {
   font-size: 18px;
   font-weight: bold;  
   text-align: center;
-  padding-top: 26px;
+  padding-top: 10px;
 }
 
 .solution-item-description p{
@@ -928,12 +939,13 @@ a {
   height: 50px;
   width: 200px;
   text-align: center;
+  margin-top: 17px;
 }
 
 .pagination {
   padding-left: 0; 
   padding-bottom: 60px;
-  margin-top: -21px;
+  margin-top: -18px;
 }
 
 .pagination li {
@@ -971,8 +983,11 @@ a {
 }
 
 .solution-item {
-  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
   border-radius: 5px;
+}
+
+.solution-item:hover {
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25);
 }
 
 /*Filters*/
@@ -1009,7 +1024,7 @@ a {
 }
 
 .filter-selection li {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .range-controls {
@@ -1109,6 +1124,7 @@ a {
   left: 0;
   opacity: 0.4;
   cursor: pointer;
+  margin-top: -3px;
 }
 
 .filter-input-radio + label:hover::before {
@@ -1118,10 +1134,10 @@ a {
 .filter-input-radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
-  width: 11px;
-  height: 11px;
-  left: 7px;
+  top: 6px;
+  width: 10px;
+  height: 10px;
+  left: 8px;
   background-color: #4D4D4D;
   border-radius: 50%;
   opacity: 0.4;
@@ -1188,7 +1204,7 @@ a {
   border: none;
   margin: 0;
   padding: 0;
-  margin-top: -18px;
+  margin-top: -17px;
 }
   
 .filter-list {
@@ -1205,7 +1221,7 @@ a {
 }
 
 .main-filters button {
-  margin-top: 10px;
+  margin-top: 13px;
   height: 50px;
   width: 260px;
   text-align: center;
