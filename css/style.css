@@ -99,7 +99,7 @@ a {
 .main-nav li {
   display: inline-block;
   vertical-align: baseline;
-  margin-right: 45px;
+  margin-right: 46px;
 }
 
 .basket {
@@ -525,11 +525,6 @@ a {
 
 /*Gallery*/
 
-.page-headline {
-  font-size: 55px;
-  line-height: 55px;
-}
-
 .gallery li {
   position: relative;
 }
@@ -706,8 +701,8 @@ a {
 .offer {
   font-weight: 700;
   font-size: 36px;
-  padding-top: 30px;
-  padding-left: 15px;
+  padding-top: 27px;
+  padding-left: 14px;
 }
 
 .offer-text {
@@ -781,10 +776,12 @@ a {
 }
 
 .page-headline {
+  font-size: 55px;
+  line-height: 55px;
   text-align: center;
   font-weight: bold;
   margin: 0;
-  padding-top: 73px;
+  padding-top: 75px;
   padding-bottom: 110px;
 }
 
@@ -792,6 +789,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-column-gap: 19px;
+  margin-top: -2px;
+  margin-bottom: 4px;
 }
 
 .catalog-headline {
@@ -1105,7 +1104,7 @@ a {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-top: 54px;
+  padding-top: 55px;
 }
 
 .filter-selection {
