@@ -8,7 +8,7 @@
 --basic-white: #ffffff;
 --basic-black: #000000;
 --basic-darkcoral: #E74246;
---basic-ultradarkcolor: #D7373B;
+--basic-ultradarkcoral: #D7373B;
 --basic-darkgreen: #00BC6C;
 --basic-ultradarkgreen: #00AA62;
 --basic-darkyellow: #EAB534;
@@ -19,6 +19,8 @@
 --basic-modalgrey: #D7DCDE;
 --basic-modaldarkgrey: #444444;
 --basic-hovergrey: #B4B9BB;
+--basic-greyforbutton: #DFDFDF;
+--basic-greyforshadow: #D5D5D5;
 }
 
 body{
@@ -39,7 +41,7 @@ a {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .container {
@@ -81,11 +83,14 @@ a {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center; 
   padding-top: 10px;
   margin-left: -77px;
   margin-bottom: -10px;
+  overflow: auto;
+  height: auto;
 }
 
 .site-navigation a {
@@ -212,10 +217,6 @@ a {
   cursor: pointer;
 }
 
-.slider-controls button:focus {
-  outline: none;
-}
-
 .slider-controls .current {
   width: 18px;
   height: 18px;
@@ -247,10 +248,12 @@ a {
 
 .more-link:hover {
   background-color: var(--basic-darkcoral);
+  border-color: var(--basic-darkcoral);
 }
 
 .more-link:active {
-  background-color: var(--basic-ultradarkcolor);
+  background-color: var(--basic-ultradarkcoral);
+  border-color: var(--basic-ultradarkcoral);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   color: var(--basic-white);
 }
@@ -280,7 +283,16 @@ a {
 /*Options*/
 
 .hidden-title {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .option-items {
@@ -331,10 +343,12 @@ a {
 
 .button-red:hover {
   background-color: var(--basic-darkcoral);
+  border-color: var(--basic-darkcoral);
 }
 
 .button-red:active {
-  background-color: var(--basic-ultradarkcolor);
+  background-color: var(--basic-ultradarkcoral);
+  border-color: var(--basic-ultradarkcoral);
 }
 
 .button-green {
@@ -350,10 +364,12 @@ a {
 
 .button-green:hover {
   background-color: var(--basic-darkgreen);
+  border-color: var(--basic-darkgreen);
 }
 
 .button-green:active {
   background-color: var(--basic-ultradarkgreen);
+  border-color: var(--basic-ultradarkgreen);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
@@ -370,16 +386,19 @@ a {
 
 .button-yellow:hover {
   background-color: var(--basic-darkyellow);
+  border-color: var(--basic-darkyellow);
 }
 
 .button-yellow:active {
   background-color: var(--basic-ultradarkyellow);
+  border-color: var(--basic-ultradarkyellow);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .options {
   width: 1107px;
   padding-top: 81px;
+  max-height: auto;
 }
 
 .options::after {
@@ -394,7 +413,6 @@ a {
 .option-link {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 89px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -403,22 +421,16 @@ a {
 .item-web {
   background-image: url("../img/illustration-1.png");
   background-repeat: no-repeat;
-  width: 300px;
-  height: 146px;
 }
 
 .item-app {
   background-image: url("../img/illustration-2.png");
   background-repeat: no-repeat;
-  width: 300px;
-  height: 146px;
 }
 
 .item-presentation {
   background-image: url("../img/illustration-3.png");
   background-repeat: no-repeat;
-  width: 300px;
-  height: 146px;
 }
 
 /*About us*/
@@ -527,6 +539,7 @@ a {
 
 .gallery li {
   position: relative;
+  cursor: pointer;
 }
 
 .gallery {
@@ -665,10 +678,6 @@ a {
   margin-bottom: -18px;
 }
 
-.button-contacts:focus {
-  outline: none;
-}
-
 .contacts-block h3 {
   font-size: 18px;
   font-weight: bold;
@@ -764,7 +773,7 @@ a {
 }
 
 .footer-social a:active:before {
-  background-color: var(--basic-ultradarkcolor);
+  background-color: var(--basic-ultradarkcoral);
 }
 
 /*Catalog*/
@@ -847,6 +856,15 @@ a {
   background-image: url("../img/icon-down-dir.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.1;
+}
+
+.sorting-options:hover::before {
+  opacity: 0.4;
+}
+
+.sorting-options:active::before {
+  opacity: 1;
 }
 
 .sorting-options::after {
@@ -860,7 +878,14 @@ a {
   background-image: url("../img/icon-up-dir.png");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.2;
+  opacity: 0.1;
+}
+.sorting-options:hover::after {
+  opacity: 0.4;
+}
+
+.sorting-options:active::after {
+  opacity: 1;
 }
 
 /*Products list*/
@@ -894,7 +919,7 @@ a {
   opacity: 1;
 }
 
-.solution-item a:hover + .solution-item-description {
+.solution-item:hover .solution-item-description {
   visibility: visible;
 }
 
@@ -939,7 +964,33 @@ a {
   width: 200px;
   text-align: center;
   margin-top: 17px;
+  cursor: pointer;
 }
+
+.solution-item button:hover {
+  border-color: var(--basic-darkcoral);
+  background-color: var(--basic-darkcoral);
+}
+
+.solution-item button:active {
+  border-color: var(--basic-ultradarkcoral);
+  background-color: var(--basic-ultradarkcoral);
+  opacity: 1;
+}
+
+.item-link {
+  color: var(--basic-black);
+}
+
+.item-link:hover {
+  color: var(--basic-coral);
+}
+
+.item-link:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
 
 .pagination {
   padding-left: 0; 
@@ -975,10 +1026,42 @@ a {
 
 .button-pagination {
   border: 2px solid;
+  border-radius: 3px;
   border-color: var(--basic-lightgrey);
   height: 50px;
   width: 50px;
   background-color: var(--basic-lightgrey);
+}
+
+.button-pagination:hover {
+  border-color: var(--basic-greyforbutton);
+  background-color: var(--basic-greyforbutton);
+}
+
+.button-pagination:active {
+  border-color: var(--basic-darkgrey);
+  background-color: var(--basic-darkgrey);
+  opacity: 0.4;
+}
+
+.button-pagination-current {
+  border: 3px solid;
+  border-radius: 3px;
+  border-color: var(--basic-lightgrey);
+  height: 50px;
+  width: 50px;
+  background-color: var(--basic-white);
+  cursor: text;
+}
+
+.button-pagination-current:hover {
+  border: 3px solid;
+  border-radius: 3px;
+  border-color: var(--basic-lightgrey);
+  height: 50px;
+  width: 50px;
+  background-color: var(--basic-white);
+  cursor: text;
 }
 
 .solution-item {
@@ -1234,6 +1317,18 @@ a {
   cursor: pointer;
 }
 
+.main-filters button:hover {
+  border-color: var(--basic-greyforbutton);
+  background-color: var(--basic-greyforbutton);
+}
+
+.main-filters button:active {
+  background-color: var(--basic-darkgrey);
+  border-color: var(--basic-darkgrey);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  opacity: 0.3;
+}
+
 /*Modal Objects*/
 
 .modal-contacts {
@@ -1395,4 +1490,8 @@ a {
 .modal-close:active::before,
 .modal-close:active::after {
   opacity: 0.1;
+}
+
+.modal-on {
+  display: block;
 }
