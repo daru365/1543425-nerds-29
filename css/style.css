@@ -170,7 +170,7 @@ a {
 }
 
 .slide-wrapper-1 {
-  background-image: url(../img/Slide1.svg);
+  background-image: url(../img/slide1.svg);
   background-repeat: no-repeat;
   padding: 75px 0;
   margin-left: -40px;
@@ -655,6 +655,7 @@ a {
   max-width: 1440px;
   margin: 0 auto;
   z-index: -1;
+  border: 0;
 }
 
 .map-block:before {
@@ -800,6 +801,7 @@ a {
   height: 81px;
   width: 81px;
   display: inline-block;
+  vertical-align: baseline;
 }
 
 .footer-social {
@@ -908,6 +910,7 @@ a {
 
 .sorting-icon-decrease {
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 18px;
   width: 11px;
   height: 10px;
@@ -919,6 +922,7 @@ a {
 
 .sorting-icon-increase {
   display: inline-block;
+  vertical-align: baseline;
   padding-left: 0px;
   width: 11px;
   height: 10px;

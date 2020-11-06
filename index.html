@@ -157,7 +157,7 @@
     </figure>
     
     <div id="map" class="map-block">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d816.3891706741999!2d30.32163095147166!3d59.93864491674949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1604557482847!5m2!1sru!2sru" class="map-iframe" width="1440" height="416" frameborder="0" style="border:0;" allowfullscreen="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d816.3891706741999!2d30.32163095147166!3d59.93864491674949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1604557482847!5m2!1sru!2sru" class="map-iframe" width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
     <div class="container">
@@ -167,7 +167,7 @@
       <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
   	
       <p><button class="button-contacts" type="button">Напишите нам</button></p>
-      <script src="js/modal.js"></script>
+
     </div>
     </div>
   </section>
@@ -210,12 +210,14 @@
       <p class="modal-description">Ваше имя:</p>
         <p>
         <input class="name-user" id="name" type="text" name="login" placeholder="Имя Фамилия">
+        <label for="name">Ваше имя:</label>
       </p>
       </div>
       <div>
       <p class="modal-description">Ваш e-mail:</p>
         <p>
         <input class="login-user" id="login-login" type="email" name="email" placeholder="email@example.com">
+        <label for="login-login">Ваш e-mail:</label>
       </p> 
       </div>
       </div>
@@ -223,6 +225,7 @@
       <p class="modal-description">Текст письма</p>
         <p>
         <input class="user-text" id="text" type="text" name="text" placeholder="В свободной форме">
+        <label for="text">Текст письма</label>
       </p>   
       </div>
         <button class="modal-button" type="submit">Отправить</button>
@@ -231,5 +234,7 @@
   <button class="modal-close" type="button" aria-label="Закрыть"></button>
       
     </section>
+
+    <script src="js/modal.js"></script>
   </body>
 </html>
