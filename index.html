@@ -5,7 +5,7 @@
     <title>Дизайн-студия Nёrd's</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   
   <body class="page-body">
@@ -37,19 +37,19 @@
 
     <section class="slider">
       <div class="container">
-      <div class="slide-wrapper slide-wrapper-1">
+      <div class="slide-wrapper">
       <ul class="slider-list">
-        <li class="slider-item slide slide-current">
+        <li class="slide slide-current slide-wrapper-1">
           <h2 class="slide-title">Долго, дорого, скрупулезно.</h2>
           <p class="slide-comment">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
   	    <a class="button more-link" href="#">Узнать больше</a>
         </li>
-        <li class="slider-item slide">
+        <li class="slide slide-wrapper-2">
           <h2 class="slide-title">Любим математику как никто другой</h2>
           <p class="slide-comment">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций</p>
         <a class="button more-link" href="#">Узнать больше</a>
         </li>
-        <li class="slider-item slide">
+        <li class="slide slide-wrapper-3">
           <h2 class="slide-title">Только ночь,<br> только хардкор</h2>
           <p class="slide-comment">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
         <a class="button more-link" href="#">Узнать больше</a>
@@ -157,18 +157,19 @@
     </figure>
     
     <div id="map" class="map-block">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d816.3891706741999!2d30.32163095147166!3d59.93864491674949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1604557482847!5m2!1sru!2sru" class="map-iframe" width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d816.3891706741999!2d30.32163095147166!3d59.93864491674949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1604557482847!5m2!1sru!2sru" class="map-iframe map-iframe-mark" width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
 
-    <div class="container">
     <div class="contacts-block">
       <h3>nёrds design studio</h3>
   	  <p class="contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>	
       <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
   	
-      <p><button class="button-contacts" type="button">Напишите нам</button></p>
+      <p>
+        <a href="#" class="button-contacts">Напишите нам</a>
+      </p>
 
-    </div>
+   
     </div>
   </section>
   
@@ -176,18 +177,21 @@
 
 
   <footer class="main-footer">
-  	<div class="container">
+    <div class="container">
       
       <section class="footer-social">
       <h3 class="hidden-title">Социальные сети</h3>
-  	<ul>
+    <ul>
       <li>
+        <span class="hidden-title">Социальная кнопка Вконтакте</span>
         <a class="social-button social-button-vk" href="#"></a>
       </li>
       <li>
+        <span class="hidden-title">Социальная кнопка Фейсбук</span>
         <a class="social-button social-button-fb" href="#"></a>
       </li>
       <li>
+        <span class="hidden-title">Социальная кнопка Инстаграм</span>
         <a class="social-button social-button-insta" href="#"></a>
       </li>
     </ul> 
@@ -197,7 +201,7 @@
     <h3 class="hidden-title">Специальное предложение</h3>
       <p class="offer">Давайте дружить, это выгодно!</p>
       <p class="offer-text">Скидка 10% для друзей из социальных сетей.</p>
-	</section>
+  </section>
   
   </div>
     </footer>
@@ -207,26 +211,17 @@
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-container">
       <div>
-      <p class="modal-description">Ваше имя:</p>
-        <p>
-        <input class="name-user" id="name" type="text" name="login" placeholder="Имя Фамилия">
-        <label for="name">Ваше имя:</label>
-      </p>
+        <label for="name" class="modal-description">Ваше имя:</label>
+          <input class="name-user" id="name" type="text" name="login" placeholder="Имя Фамилия">
       </div>
       <div>
-      <p class="modal-description">Ваш e-mail:</p>
-        <p>
-        <input class="login-user" id="login-login" type="email" name="email" placeholder="email@example.com">
-        <label for="login-login">Ваш e-mail:</label>
-      </p> 
+        <label for="name" class="modal-description">Ваш e-mail:</label>
+          <input class="login-user" id="login-login" type="email" name="email" placeholder="email@example.com">
       </div>
       </div>
       <div class="text-container">
-      <p class="modal-description">Текст письма</p>
-        <p>
-        <input class="user-text" id="text" type="text" name="text" placeholder="В свободной форме">
-        <label for="text">Текст письма</label>
-      </p>   
+      <label for="name" class="modal-description">Текст письма</label>
+        <input class="user-text" id="text" type="text" name="text" placeholder="В свободной форме"> 
       </div>
         <button class="modal-button" type="submit">Отправить</button>
     </form>
@@ -235,6 +230,6 @@
       
     </section>
 
-    <script src="js/modal.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <title>Каталог - дизайн-студия Nёrd's</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   
   <body class="page-body">
@@ -123,14 +123,14 @@
     <div class="sorting-columns">
     <p class="sorting-headline">Сортировать:</p>
   <ul class="sorting-options">
-    <li>по цене</li>
-    <li>по типу</li>
-    <li>по названию</li>
+    <li><a href="#" class="sorting-option-link active">по цене</a></li>
+    <li><a href="#" class="sorting-option-link">по типу</a></li>
+    <li><a href="#" class="sorting-option-link">по названию</a></li>
   </ul>
 
     <div class="sorting-icon">
-      <span class="sorting-icon-decrease"></span>
-      <span class="sorting-icon-increase"></span>
+      <a href="#" class="sorting-icon-decrease"></a>
+      <a href="#" class="sorting-icon-increase"></a>
     </div>
 
   </div>
@@ -238,22 +238,22 @@
   <section class="contacts">
    
     <figure class="map-marker">
-    <img src="img/map1.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <img src="img/map1.png" width="1440" height="416" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </figure>
     
     <div id="map" class="map-block">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d816.3891706741999!2d30.32163095147166!3d59.93864491674949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1604557482847!5m2!1sru!2sru" class="map-iframe" width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     
-    <div class="container">
     <div class="contacts-block">
       <h3>nёrds design studio</h3>
       <p class="contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p> 
       <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
     
-      <p><button class="button-contacts" type="button">Напишите нам</button></p>
+      <p>
+        <a href="#" class="button-contacts">Напишите нам</a>
+      </p>
 
-    </div>
     </div>
   </section>
   
@@ -267,12 +267,15 @@
       <h3 class="hidden-title">Социальные сети</h3>
     <ul>
       <li>
+        <span class="hidden-title">Социальная кнопка Вконтакте</span>
         <a class="social-button social-button-vk" href="#"></a>
       </li>
       <li>
+        <span class="hidden-title">Социальная кнопка Фейсбук</span>
         <a class="social-button social-button-fb" href="#"></a>
       </li>
       <li>
+        <span class="hidden-title">Социальная кнопка Инстаграм</span>
         <a class="social-button social-button-insta" href="#"></a>
       </li>
     </ul> 
@@ -292,26 +295,17 @@
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <div class="modal-container">
       <div>
-      <p class="modal-description">Ваше имя:</p>
-        <p>
-        <input class="name-user" id="name" type="text" name="login" placeholder="Имя Фамилия">
-        <label for="name">Ваше имя:</label>
-      </p>
+        <label for="name" class="modal-description">Ваше имя:</label>
+          <input class="name-user" id="name" type="text" name="login" placeholder="Имя Фамилия">
       </div>
       <div>
-      <p class="modal-description">Ваш e-mail:</p>
-        <p>
-        <input class="login-user" id="login-login" type="email" name="email" placeholder="email@example.com">
-        <label for="login-login">Ваш e-mail:</label>
-      </p> 
+        <label for="name" class="modal-description">Ваш e-mail:</label>
+          <input class="login-user" id="login-login" type="email" name="email" placeholder="email@example.com">
       </div>
       </div>
       <div class="text-container">
-      <p class="modal-description">Текст письма</p>
-        <p>
-        <input class="user-text" id="text" type="text" name="text" placeholder="В свободной форме">
-        <label for="text">Текст письма</label>
-      </p>   
+      <label for="name" class="modal-description">Текст письма</label>
+        <input class="user-text" id="text" type="text" name="text" placeholder="В свободной форме"> 
       </div>
         <button class="modal-button" type="submit">Отправить</button>
     </form>
@@ -320,6 +314,6 @@
       
     </section>
 
-    <script src="js/modal.js"></script>
+    <script src="js/modal.min.js"></script>
   </body>
 </html>
