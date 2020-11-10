@@ -176,7 +176,7 @@ a {
 }
 
 .slide-wrapper-1 {
-  background-image: url(../img/slide1.svg);
+  background-image: url(../img/slide1.png);
   background-repeat: no-repeat;
   padding: 75px 0;
   margin-left: -40px;
@@ -185,7 +185,7 @@ a {
 }
 
 .slide-wrapper-2 {
-  background-image: url(../img/slide2.svg);
+  background-image: url(../img/slide2.png);
   background-repeat: no-repeat;
   padding: 75px 0;
   margin-left: -40px;
@@ -193,7 +193,7 @@ a {
 }
 
 .slide-wrapper-3 {
-  background-image: url(../img/slide3.svg);
+  background-image: url(../img/slide3.png);
   background-repeat: no-repeat;
   padding: 75px 0;
   margin-left: -40px;
